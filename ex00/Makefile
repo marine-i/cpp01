@@ -1,0 +1,31 @@
+NAME = ex00
+
+CXX = c++
+
+CXXFLAGS = -Wall -Werror -Wextra -std=c++98
+
+HEADER = Zombie.hpp
+
+SRC = main.cpp Zombie.cpp newZombie.cpp randomChump.cpp
+
+OBJ = $(SRC:.cpp=.o)
+
+
+
+all: $(NAME)
+
+$(NAME): $(OBJ)
+	$(CXX) $(CXXFLAGS) $(OBJ) -o $(NAME)
+
+%.o: %.cpp $(HEADER)
+	$(CXX) $(CXXFLAGS) -c $< -o $@
+
+clean:
+	rm -f $(OBJ)
+
+fclean: clean
+	rm -f $(NAME)
+
+re: fclean all
+
+.PHONY: all clean fclean re
