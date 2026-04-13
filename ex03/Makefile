@@ -6,8 +6,7 @@ CXXFLAGS = -Wall -Werror -Wextra -std=c++98
 
 HEADERS = Weapon.hpp HumanA.hpp HumanB.hpp
 
-SRC = main.cpp Weapon.cpp HumanA.cpp 
-# HumanB.cpp
+SRC = main.cpp Weapon.cpp HumanA.cpp HumanB.cpp
 
 OBJ = $(SRC:.cpp=.o)
 
