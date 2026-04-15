@@ -12,10 +12,6 @@ Harl::~Harl()
 
 void	Harl::complain( std::string level )
 {
-	(void)level;
-	int	i;
-
-	i = 0;
 	std::string levels[4] = {"DEBUG", "INFO", "WARNING", "ERROR"};
 	void (Harl::*fptr[4])(void) = {&Harl::debug, &Harl::info, &Harl::warning, &Harl::error};
 	for (size_t i = 0; i < 4; i++)
