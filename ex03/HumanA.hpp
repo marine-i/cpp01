@@ -2,7 +2,6 @@
 #define HUMANA_HPP
 
 #include "Weapon.hpp"
-// #include "HumanB.hpp"
 
 class	HumanA
 {

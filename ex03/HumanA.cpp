@@ -1,6 +1,5 @@
 #include "Weapon.hpp"
 #include "HumanA.hpp"
-// #include "HumanB.hpp"
 #include <iostream>
 
 HumanA::HumanA (std::string name, Weapon &weapon) : _name(name), _weapon(weapon)
