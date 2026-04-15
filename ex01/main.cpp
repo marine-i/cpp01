@@ -4,7 +4,7 @@ int main(void)
 {
 	int	n;
 
-	n = 5;
+	n = 4;
 	Zombie *z = zombieHorde(n, "Bob");
 	if (z == NULL)
 	{
