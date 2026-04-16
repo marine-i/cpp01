@@ -4,7 +4,7 @@ CXX = c++
 
 CXXFLAGS = -Wall -Werror -Wextra -std=c++98
 
-HEADERS = main.hpp
+HEADERS = Harl.hpp
 
 SRC = main.cpp Harl.cpp
 
